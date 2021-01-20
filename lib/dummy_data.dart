@@ -103,7 +103,7 @@ const DUMMY_MEALS = const [
     isVegeterian: true
   ),
   Meal(
-    id: 'm3',
+    id: 'm4',
     categories: ['c2', 'c6'],
     title: 'Makaroni',
     imageUrl: 'https://cdn.pixabay.com/photo/2016/11/23/18/31/close-up-1854245_960_720.jpg',
@@ -118,7 +118,7 @@ const DUMMY_MEALS = const [
     isVegeterian: true
   ),
   Meal(
-    id: 'm3',
+    id: 'm5',
     categories: ['c2', 'c9'],
     title: 'Eggs',
     imageUrl: 'https://cdn.pixabay.com/photo/2017/09/28/18/13/bread-2796393_960_720.jpg',
@@ -126,7 +126,7 @@ const DUMMY_MEALS = const [
     steps: ['',''],
     duration: 30,
     complexity: Complexity.Hard,
-    affordabilty: Affordabilty.Luxurios,
+    affordabilty: Affordabilty.Pricey,
     isGlutenFree: true,
     isLactoseFree: true,
     isVegan: false,

@@ -28,6 +28,10 @@ class MealDetailScreen extends StatelessWidget {
         child: child);
   }
 
+  void deleteHandler(BuildContext context, String id) {
+    Navigator.of(context).pop(id);
+  }
+
   @override
   Widget build(BuildContext context) {
     final mealId = ModalRoute.of(context).settings.arguments as String;
@@ -75,6 +79,10 @@ class MealDetailScreen extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.delete),
+        onPressed: () => deleteHandler(context,mealId),
+        ),
     );
   }
 }
