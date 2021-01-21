@@ -4,6 +4,11 @@ import 'package:meal_app_ekici_flutter/dummy_data.dart';
 class MealDetailScreen extends StatelessWidget {
   static String routeName = '/meal-detail';
 
+  final Function _toggleFavorite;
+  final Function _isFavorite;
+
+  const MealDetailScreen(this._toggleFavorite, this._isFavorite);
+
   Widget buildSectionTitle(BuildContext context, String text) {
     return Container(
       margin: EdgeInsets.symmetric(vertical: 10),
@@ -80,8 +85,8 @@ class MealDetailScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.delete),
-        onPressed: () => deleteHandler(context,mealId),
+        child: Icon(_isFavorite(mealId) ? Icons.star : Icons.star_border ),
+        onPressed:() => _toggleFavorite(mealId),
         ),
     );
   }

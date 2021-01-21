@@ -21,7 +21,7 @@ class MainDrawer extends StatelessWidget {
         Container(
             alignment: Alignment.centerLeft,
             width: double.infinity,
-            padding: EdgeInsets.all(20),
+            padding: EdgeInsets.symmetric(vertical: 30, horizontal: 20),
             color: Theme.of(context).accentColor,
             child: Text(
               'Hazırlanıyor!',
